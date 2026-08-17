@@ -1,200 +1,418 @@
 [
-    {
-          "slug": "n8n",
-          "name": "n8n",
-          "tagline": "Self-hostable, developer-first workflow automation",
-          "category": "Automation Platform",
-          "bestFor": "Technical teams that want full control and no per-execution fees",
-          "pricing": "Free self-hosted (open-source); Cloud plans start around $20/month",
-          "rating": 4.6,
-          "pros": [
-                  "Self-hosting option removes recurring execution fees",
-                  "Deep AI workflow support (LangChain nodes built in)",
-                  "SOC 2 certified, strong for security-conscious teams",
-                  "Visual editor with full code fallback (JS/Python) when needed"
-          ],
-          "cons": [
-                  "Steeper learning curve than no-code-only tools",
-                  "Self-hosting requires basic DevOps knowledge",
-                  "Smaller pre-built integration library than Zapier"
-          ],
-          "website": "https://n8n.io",
-          "summary": "n8n sits at the intersection of no-code and pro-code: it gives non-developers a visual canvas while still letting engineers drop into raw JavaScript or Python when a workflow needs custom logic. Its biggest differentiator is the self-hosting option, which removes the per-task or per-operation billing model that dominates this category. For teams building AI agent pipelines (RAG chains, autonomous research agents, multi-step LLM workflows), n8n's native LangChain nodes make it one of the few automation tools built with agentic AI in mind rather than bolted on after the fact."
-    },
-    {
-          "slug": "zapier",
-          "name": "Zapier",
-          "tagline": "The largest app integration library, now with AI agents",
-          "category": "Automation Platform",
-          "bestFor": "Non-technical teams who need breadth of app coverage above all else",
-          "pricing": "Free tier available; paid plans start around $19.99/month, task-based pricing",
-          "rating": 4.4,
-          "pros": [
-                  "8,000+ app integrations, the widest in the industry",
-                  "Zapier Agents (formerly Zapier Central) adds autonomous AI agent building",
-                  "Extremely low learning curve for simple automations",
-                  "Reliable uptime and mature support ecosystem"
-          ],
-          "cons": [
-                  "Task-based pricing gets expensive fast at scale",
-                  "Complex multi-branch logic is harder to manage visually than n8n",
-                  "No self-hosting option"
-          ],
-          "website": "https://zapier.com",
-          "summary": "Zapier remains the default choice when the deciding factor is 'does it connect to the app I already use.' Its AI agent layer, Zapier Agents, lets users describe a job in plain language rather than wiring a step-by-step diagram, which narrows the gap with agent-native tools like Lindy. Where Zapier still wins is raw integration count and reliability at scale — for a small business that mostly needs dependable glue between SaaS tools, it remains hard to beat."
-    },
-    {
-          "slug": "make",
-          "name": "Make (formerly Integromat)",
-          "tagline": "Visual-first automation with the deepest flow control",
-          "category": "Automation Platform",
-          "bestFor": "Teams that want visual automation design without sacrificing complexity",
-          "pricing": "Free tier available; paid plans start around $9/month for 10,000 operations",
-          "rating": 4.5,
-          "pros": [
-                  "Best-in-class visual flow builder for branching logic",
-                  "Operations-based pricing is often cheaper than Zapier's task pricing at scale",
-                  "Strong error-handling and retry controls built into the canvas",
-                  "Good balance of power and approachability"
-          ],
-          "cons": [
-                  "Interface has a learning curve for first-time automation builders",
-                  "AI-native agent features are less mature than Lindy or Relevance AI",
-                  "Community and integration library smaller than Zapier's"
-          ],
-          "website": "https://www.make.com",
-          "summary": "Make's core strength is its canvas: instead of a linear step list, you see the entire automation as a flowchart, which makes debugging multi-branch logic far easier than in list-based tools. Pricing by operations rather than tasks tends to work out cheaper for high-volume, simple workflows. It's a strong middle ground between Zapier's simplicity and n8n's technical depth."
-    },
-    {
-          "slug": "lindy",
-          "name": "Lindy",
-          "tagline": "Describe a job, not a workflow diagram",
-          "category": "AI Agent Builder",
-          "bestFor": "Non-technical teams that want autonomous AI agents, not step-by-step automations",
-          "pricing": "Free tier available; paid plans start around $49.99/month",
-          "rating": 4.5,
-          "pros": [
-                  "Agent-first UX: describe the outcome, Lindy figures out the steps",
-                  "SOC 2 and HIPAA compliant, notable for a newer AI-native tool",
-                  "Handles ambiguous, judgment-based tasks better than rigid workflow tools",
-                  "Strong for inbox management, meeting scheduling, and research agents"
-          ],
-          "cons": [
-                  "Less predictable than deterministic workflow tools for compliance-heavy processes",
-                  "Smaller integration library than Zapier or Make",
-                  "Higher price floor than pure automation tools"
-          ],
-          "website": "https://www.lindy.ai",
-          "summary": "Lindy represents a genuinely different category from Zapier, Make, and n8n. Those three ask you to design a workflow; Lindy asks you to describe a role and lets the underlying model figure out the steps, adapting when inputs vary. That flexibility is valuable for messy, judgment-based work (triaging support tickets, researching leads) but is a worse fit for processes that need deterministic, auditable steps every time."
-},
   {
-        "slug": "relevance-ai",
-        "name": "Relevance AI",
-        "tagline": "AI-native automation built around LLM pipelines",
-        "category": "AI Agent Builder",
-        "bestFor": "Teams building AI-first products or internal tools on top of LLM pipelines",
-        "pricing": "Free tier available; credit-based pricing on paid plans",
-        "rating": 4.3,
-        "pros": [
-                "Purpose-built for chaining LLM calls and AI agents, not retrofitted",
-                "Flexible credit-based pricing scales with actual usage",
-                "Good for building multi-agent systems that call each other",
-                "Strong documentation for developers extending the platform"
-        ],
-        "cons": [
-                "Credit-based pricing can be harder to predict than flat subscriptions",
-                "Smaller community than Zapier/Make, fewer templates",
-                "More setup effort required than plug-and-play tools"
-        ],
-        "website": "https://relevanceai.com",
-        "summary": "Relevance AI was designed from the ground up for AI pipelines rather than general SaaS-to-SaaS automation, which shows in how naturally it handles multi-agent setups where one AI agent hands work to another. It's a strong pick for teams that see AI agents as their core product, not just an internal efficiency tool."
+    "slug": "n8n",
+    "name": "n8n",
+    "tagline": "Self-hostable, developer-first workflow automation",
+    "category": "Automation Platform",
+    "bestFor": "Technical teams that want full control and no per-execution fees",
+    "pricing": "Free self-hosted (open-source); Cloud plans start around $20/month",
+    "rating": 4.6,
+    "pros": [
+      "Self-hosting option removes recurring execution fees",
+      "Deep AI workflow support (LangChain nodes built in)",
+      "SOC 2 certified, strong for security-conscious teams",
+      "Visual editor with full code fallback (JS/Python) when needed"
+    ],
+    "cons": [
+      "Steeper learning curve than no-code-only tools",
+      "Self-hosting requires basic DevOps knowledge",
+      "Smaller pre-built integration library than Zapier"
+    ],
+    "website": "https://n8n.io",
+    "summary": "n8n sits at the intersection of no-code and pro-code: it gives non-developers a visual canvas while still letting engineers drop into raw JavaScript or Python when a workflow needs custom logic. Its biggest differentiator is the self-hosting option, which removes the per-task or per-operation billing model that dominates this category. For teams building AI agent pipelines (RAG chains, autonomous research agents, multi-step LLM workflows), n8n's native LangChain nodes make it one of the few automation tools built with agentic AI in mind rather than bolted on after the fact."
   },
   {
-        "slug": "crewai",
-        "name": "CrewAI",
-        "tagline": "Open-source framework for orchestrating multi-agent AI teams",
-        "category": "Developer Framework",
-        "bestFor": "Developers building custom multi-agent systems in code",
-        "pricing": "Free and open-source; managed CrewAI+ platform available for teams",
-        "rating": 4.4,
-        "pros": [
-                "Full code-level control over agent roles, tools, and orchestration",
-                "Active open-source community and fast-moving development",
-                "No vendor lock-in — runs anywhere Python runs",
-                "Good fit for teams already building on LangChain-adjacent stacks"
-        ],
-        "cons": [
-                "Requires Python and engineering resources — not for non-technical users",
-                "No visual builder in the open-source core",
-                "Debugging multi-agent behavior can be non-trivial at scale"
-        ],
-        "website": "https://www.crewai.com",
-        "summary": "CrewAI is not a no-code tool — it's a Python framework for developers who want to define AI agents with specific roles ('researcher', 'writer', 'reviewer') that collaborate on a task. It trades the accessibility of tools like Lindy for full programmatic control, making it the right choice for engineering teams building a custom product rather than automating internal operations."
+    "slug": "zapier",
+    "name": "Zapier",
+    "tagline": "The largest app integration library, now with AI agents",
+    "category": "Automation Platform",
+    "bestFor": "Non-technical teams who need breadth of app coverage above all else",
+    "pricing": "Free tier available; paid plans start around $19.99/month, task-based pricing",
+    "rating": 4.4,
+    "pros": [
+      "8,000+ app integrations, the widest in the industry",
+      "Zapier Agents (formerly Zapier Central) adds autonomous AI agent building",
+      "Extremely low learning curve for simple automations",
+      "Reliable uptime and mature support ecosystem"
+    ],
+    "cons": [
+      "Task-based pricing gets expensive fast at scale",
+      "Complex multi-branch logic is harder to manage visually than n8n",
+      "No self-hosting option"
+    ],
+    "website": "https://zapier.com",
+    "summary": "Zapier remains the default choice when the deciding factor is 'does it connect to the app I already use.' Its AI agent layer, Zapier Agents, lets users describe a job in plain language rather than wiring a step-by-step diagram, which narrows the gap with agent-native tools like Lindy. Where Zapier still wins is raw integration count and reliability at scale — for a small business that mostly needs dependable glue between SaaS tools, it remains hard to beat."
   },
   {
-        "slug": "gumloop",
-        "name": "Gumloop",
-        "tagline": "No-code AI workflow builder aimed at ops and growth teams",
-        "category": "AI Agent Builder",
-        "bestFor": "Non-technical ops/growth teams that want AI-native workflows without writing code",
-        "pricing": "Free tier available; paid plans start around $97/month, credit-based",
-        "rating": 4.2,
-        "pros": [
-                "Drag-and-drop builder specifically designed around AI/LLM steps",
-                "Large template library for common ops and marketing workflows",
-                "Handles unstructured data (PDFs, scraped web pages) well as workflow inputs",
-                "Faster to a working AI workflow than general-purpose tools for non-engineers"
-        ],
-        "cons": [
-                "Pricing climbs quickly once you're running workflows at real volume",
-                "Smaller integration ecosystem than Zapier or Make",
-                "Less suited to deterministic, compliance-critical processes"
-        ],
-        "website": "https://www.gumloop.com",
-        "summary": "Gumloop occupies a middle ground between general automation platforms and pure AI agent builders: the canvas looks like Zapier or Make, but nearly every node assumes you're working with AI — summarizing, extracting, classifying — rather than just passing data between apps. It's a strong option for ops and growth teams that want to build AI-powered workflows without engineering support, though costs can add up at scale."
+    "slug": "make",
+    "name": "Make (formerly Integromat)",
+    "tagline": "Visual-first automation with the deepest flow control",
+    "category": "Automation Platform",
+    "bestFor": "Teams that want visual automation design without sacrificing complexity",
+    "pricing": "Free tier available; paid plans start around $9/month for 10,000 operations",
+    "rating": 4.5,
+    "pros": [
+      "Best-in-class visual flow builder for branching logic",
+      "Operations-based pricing is often cheaper than Zapier's task pricing at scale",
+      "Strong error-handling and retry controls built into the canvas",
+      "Good balance of power and approachability"
+    ],
+    "cons": [
+      "Interface has a learning curve for first-time automation builders",
+      "AI-native agent features are less mature than Lindy or Relevance AI",
+      "Community and integration library smaller than Zapier's"
+    ],
+    "website": "https://www.make.com",
+    "summary": "Make's core strength is its canvas: instead of a linear step list, you see the entire automation as a flowchart, which makes debugging multi-branch logic far easier than in list-based tools. Pricing by operations rather than tasks tends to work out cheaper for high-volume, simple workflows. It's a strong middle ground between Zapier's simplicity and n8n's technical depth."
   },
   {
-        "slug": "stack-ai",
-        "name": "Stack AI",
-        "tagline": "Enterprise-grade AI workflow and agent platform with strong compliance",
-        "category": "AI Agent Builder",
-        "bestFor": "Larger organizations that need AI agents with enterprise compliance and governance",
-        "pricing": "Custom/enterprise pricing; free trial available",
-        "rating": 4.3,
-        "pros": [
-                "Comprehensive compliance options (SOC 2, HIPAA, GDPR-aligned features)",
-                "Strong support for connecting internal/private data sources securely",
-                "Visual builder that scales from simple chatbots to complex multi-step agents",
-                "Built with enterprise procurement and security review in mind"
-        ],
-        "cons": [
-                "Overkill and costlier than necessary for small teams or simple use cases",
-                "Steeper onboarding than consumer-oriented tools like Lindy",
-                "Custom pricing makes it harder to evaluate cost upfront"
-        ],
-        "website": "https://www.stack-ai.com",
-        "summary": "Stack AI's pitch is squarely aimed at companies that need AI agents to survive a security and compliance review, not just a product demo. It offers the visual workflow-building experience common across this category, but backs it with the audit trails, access controls, and certifications that procurement teams at larger organizations require."
+    "slug": "lindy",
+    "name": "Lindy",
+    "tagline": "Describe a job, not a workflow diagram",
+    "category": "AI Agent Builder",
+    "bestFor": "Non-technical teams that want autonomous AI agents, not step-by-step automations",
+    "pricing": "Free tier available; paid plans start around $49.99/month",
+    "rating": 4.5,
+    "pros": [
+      "Agent-first UX: describe the outcome, Lindy figures out the steps",
+      "SOC 2 and HIPAA compliant, notable for a newer AI-native tool",
+      "Handles ambiguous, judgment-based tasks better than rigid workflow tools",
+      "Strong for inbox management, meeting scheduling, and research agents"
+    ],
+    "cons": [
+      "Less predictable than deterministic workflow tools for compliance-heavy processes",
+      "Smaller integration library than Zapier or Make",
+      "Higher price floor than pure automation tools"
+    ],
+    "website": "https://www.lindy.ai",
+    "summary": "Lindy represents a genuinely different category from Zapier, Make, and n8n. Those three ask you to design a workflow; Lindy asks you to describe a role and lets the underlying model figure out the steps, adapting when inputs vary. That flexibility is valuable for messy, judgment-based work (triaging support tickets, researching leads) but is a worse fit for processes that need deterministic, auditable steps every time."
   },
   {
-        "slug": "flowise",
-        "name": "Flowise",
-        "tagline": "Open-source, self-hosted visual builder for LangChain applications",
-        "category": "Developer Framework",
-        "bestFor": "Developers who want a visual layer over LangChain without giving up self-hosting",
-        "pricing": "Free and open-source (self-hosted); managed cloud plans available",
-        "rating": 4.1,
-        "pros": [
-                "Fully open-source and self-hostable — no vendor lock-in",
-                "Visual canvas over LangChain concepts (chains, agents, tools, memory)",
-                "Good for prototyping RAG pipelines and chatbots quickly",
-                "Active community and frequent updates tracking the LangChain ecosystem"
-        ],
-        "cons": [
-                "Still requires some familiarity with LangChain concepts to use well",
-                "Less polished UX than commercial no-code competitors",
-                "Self-hosting means you own uptime, scaling, and security"
-        ],
-        "website": "https://flowiseai.com",
-        "summary": "Flowise is essentially a visual front-end for LangChain: instead of writing chain and agent definitions in code, you drag and connect nodes representing prompts, models, tools, and memory. It's the natural choice for developers who like LangChain's building blocks but want a faster way to prototype, and who'd rather self-host than depend on a SaaS platform."
+    "slug": "relevance-ai",
+    "name": "Relevance AI",
+    "tagline": "AI-native automation built around LLM pipelines",
+    "category": "AI Agent Builder",
+    "bestFor": "Teams building AI-first products or internal tools on top of LLM pipelines",
+    "pricing": "Free tier available; credit-based pricing on paid plans",
+    "rating": 4.3,
+    "pros": [
+      "Purpose-built for chaining LLM calls and AI agents, not retrofitted",
+      "Flexible credit-based pricing scales with actual usage",
+      "Good for building multi-agent systems that call each other",
+      "Strong documentation for developers extending the platform"
+    ],
+    "cons": [
+      "Credit-based pricing can be harder to predict than flat subscriptions",
+      "Smaller community than Zapier/Make, fewer templates",
+      "More setup effort required than plug-and-play tools"
+    ],
+    "website": "https://relevanceai.com",
+    "summary": "Relevance AI was designed from the ground up for AI pipelines rather than general SaaS-to-SaaS automation, which shows in how naturally it handles multi-agent setups where one AI agent hands work to another. It's a strong pick for teams that see AI agents as their core product, not just an internal efficiency tool."
+  },
+  {
+    "slug": "crewai",
+    "name": "CrewAI",
+    "tagline": "Open-source framework for orchestrating multi-agent AI teams",
+    "category": "Developer Framework",
+    "bestFor": "Developers building custom multi-agent systems in code",
+    "pricing": "Free and open-source; managed CrewAI+ platform available for teams",
+    "rating": 4.4,
+    "pros": [
+      "Full code-level control over agent roles, tools, and orchestration",
+      "Active open-source community and fast-moving development",
+      "No vendor lock-in — runs anywhere Python runs",
+      "Good fit for teams already building on LangChain-adjacent stacks"
+    ],
+    "cons": [
+      "Requires Python and engineering resources — not for non-technical users",
+      "No visual builder in the open-source core",
+      "Debugging multi-agent behavior can be non-trivial at scale"
+    ],
+    "website": "https://www.crewai.com",
+    "summary": "CrewAI is not a no-code tool — it's a Python framework for developers who want to define AI agents with specific roles ('researcher', 'writer', 'reviewer') that collaborate on a task. It trades the accessibility of tools like Lindy for full programmatic control, making it the right choice for engineering teams building a custom product rather than automating internal operations."
+  },
+  {
+    "slug": "gumloop",
+    "name": "Gumloop",
+    "tagline": "No-code AI workflow builder aimed at ops and growth teams",
+    "category": "AI Agent Builder",
+    "bestFor": "Non-technical ops/growth teams that want AI-native workflows without writing code",
+    "pricing": "Free tier available; paid plans start around $97/month, credit-based",
+    "rating": 4.2,
+    "pros": [
+      "Drag-and-drop builder specifically designed around AI/LLM steps",
+      "Large template library for common ops and marketing workflows",
+      "Handles unstructured data (PDFs, scraped web pages) well as workflow inputs",
+      "Faster to a working AI workflow than general-purpose tools for non-engineers"
+    ],
+    "cons": [
+      "Pricing climbs quickly once you're running workflows at real volume",
+      "Smaller integration ecosystem than Zapier or Make",
+      "Less suited to deterministic, compliance-critical processes"
+    ],
+    "website": "https://www.gumloop.com",
+    "summary": "Gumloop occupies a middle ground between general automation platforms and pure AI agent builders: the canvas looks like Zapier or Make, but nearly every node assumes you're working with AI — summarizing, extracting, classifying — rather than just passing data between apps. It's a strong option for ops and growth teams that want to build AI-powered workflows without engineering support, though costs can add up at scale."
+  },
+  {
+    "slug": "stack-ai",
+    "name": "Stack AI",
+    "tagline": "Enterprise-grade AI workflow and agent platform with strong compliance",
+    "category": "AI Agent Builder",
+    "bestFor": "Larger organizations that need AI agents with enterprise compliance and governance",
+    "pricing": "Custom/enterprise pricing; free trial available",
+    "rating": 4.3,
+    "pros": [
+      "Comprehensive compliance options (SOC 2, HIPAA, GDPR-aligned features)",
+      "Strong support for connecting internal/private data sources securely",
+      "Visual builder that scales from simple chatbots to complex multi-step agents",
+      "Built with enterprise procurement and security review in mind"
+    ],
+    "cons": [
+      "Overkill and costlier than necessary for small teams or simple use cases",
+      "Steeper onboarding than consumer-oriented tools like Lindy",
+      "Custom pricing makes it harder to evaluate cost upfront"
+    ],
+    "website": "https://www.stack-ai.com",
+    "summary": "Stack AI's pitch is squarely aimed at companies that need AI agents to survive a security and compliance review, not just a product demo. It offers the visual workflow-building experience common across this category, but backs it with the audit trails, access controls, and certifications that procurement teams at larger organizations require."
+  },
+  {
+    "slug": "flowise",
+    "name": "Flowise",
+    "tagline": "Open-source, self-hosted visual builder for LangChain applications",
+    "category": "Developer Framework",
+    "bestFor": "Developers who want a visual layer over LangChain without giving up self-hosting",
+    "pricing": "Free and open-source (self-hosted); managed cloud plans available",
+    "rating": 4.1,
+    "pros": [
+      "Fully open-source and self-hostable — no vendor lock-in",
+      "Visual canvas over LangChain concepts (chains, agents, tools, memory)",
+      "Good for prototyping RAG pipelines and chatbots quickly",
+      "Active community and frequent updates tracking the LangChain ecosystem"
+    ],
+    "cons": [
+      "Still requires some familiarity with LangChain concepts to use well",
+      "Less polished UX than commercial no-code competitors",
+      "Self-hosting means you own uptime, scaling, and security"
+    ],
+    "website": "https://flowiseai.com",
+    "summary": "Flowise is essentially a visual front-end for LangChain: instead of writing chain and agent definitions in code, you drag and connect nodes representing prompts, models, tools, and memory. It's the natural choice for developers who like LangChain's building blocks but want a faster way to prototype, and who'd rather self-host than depend on a SaaS platform."
+  },
+  {
+    "slug": "devin",
+    "name": "Devin",
+    "tagline": "Autonomous AI software engineer that plans and executes coding tasks",
+    "category": "Coding Agent",
+    "bestFor": "Engineering teams that want to delegate well-scoped coding tasks to an autonomous agent",
+    "pricing": "Usage-based pricing via Cognition; team and enterprise plans available",
+    "rating": 4.3,
+    "pros": [
+      "Plans a task before executing, rather than just autocompleting code line by line",
+      "Runs in a sandboxed cloud environment with its own shell, browser, and editor",
+      "Can work through multi-step engineering tasks with less hand-holding than copilots",
+      "Backed by rapid, well-funded development (Cognition)"
+    ],
+    "cons": [
+      "Best suited to well-scoped tasks; still needs review on ambiguous or large-scope work",
+      "Usage-based cost can be harder to predict than flat developer-tool subscriptions",
+      "Less mature ecosystem/plugins than established IDEs"
+    ],
+    "website": "https://cognition.ai",
+    "summary": "Devin was among the first tools marketed as an autonomous AI software engineer rather than an autocomplete assistant: instead of suggesting the next line, it plans an approach, then executes across a sandboxed environment with shell, browser, and editor access. It's best treated as a junior engineer you assign a scoped ticket to, not a replacement for code review — but for well-defined tasks it can meaningfully cut the time from ticket to pull request."
+  },
+  {
+    "slug": "cursor",
+    "name": "Cursor",
+    "tagline": "AI-native code editor built for fast, in-flow pair programming",
+    "category": "Coding Agent",
+    "bestFor": "Developers who want AI assistance built into their primary editor, not a separate agent",
+    "pricing": "Free tier available; Pro plans start around $20/month",
+    "rating": 4.7,
+    "pros": [
+      "Deeply integrated into the editing experience rather than a bolt-on chat panel",
+      "Fast iteration loop: inline edits, multi-file context, and agent mode in one place",
+      "Large and growing user base means fast bug fixes and frequent model upgrades",
+      "Works well both for small inline edits and larger agentic refactors"
+    ],
+    "cons": [
+      "Primarily built around a specific editor experience — less useful if your team is tied to another IDE",
+      "Costs can add up for heavy usage on higher-tier plans",
+      "Best results still require the developer to review and steer, not fully autonomous"
+    ],
+    "website": "https://cursor.com",
+    "summary": "Cursor took the approach of rebuilding the code editor around AI rather than adding AI to an existing one, and it shows in how naturally suggestions, multi-file edits, and agent-driven changes fit into the normal editing flow. It has become one of the fastest-growing developer tools in this category, appealing to engineers who want AI assistance without leaving their editor or learning a separate agent interface."
+  },
+  {
+    "slug": "voiceflow",
+    "name": "Voiceflow",
+    "tagline": "No-code builder for voice and chat conversational agents",
+    "category": "Conversational Agent Builder",
+    "bestFor": "Product and design teams building voice or chat assistants collaboratively",
+    "pricing": "Free tier available; paid plans scale with usage and team size",
+    "rating": 4.3,
+    "pros": [
+      "Visual conversation design canvas built for both voice and chat",
+      "Strong collaboration features for cross-functional teams (design, PM, engineering)",
+      "Mature product with a decade of conversational-AI focus",
+      "Good fit for teams that need to prototype and iterate on dialogue flows quickly"
+    ],
+    "cons": [
+      "More specialized for conversational UX than general-purpose task automation",
+      "Complex branching conversations can still require careful design discipline",
+      "Less suited to backend workflow automation outside of conversation flows"
+    ],
+    "website": "https://www.voiceflow.com",
+    "summary": "Voiceflow's strength is conversation design: a visual canvas purpose-built for mapping out voice and chat interactions, with enough collaboration tooling that designers and non-engineers can meaningfully contribute alongside developers. It's the more natural pick when the AI agent's primary interface is a conversation — voice assistant, support bot, IVR — rather than a background task-runner."
+  },
+  {
+    "slug": "botpress",
+    "name": "Botpress",
+    "tagline": "Mature conversational AI platform with over a decade of chatbot deployments",
+    "category": "Conversational Agent Builder",
+    "bestFor": "Teams that want a battle-tested chatbot platform with newer LLM-powered agent features",
+    "pricing": "Free tier available; usage-based paid plans",
+    "rating": 4.2,
+    "pros": [
+      "Long track record — over a million bots deployed historically",
+      "Added LLM-based agent capabilities on top of an already mature platform",
+      "Good developer tooling and extensibility for custom logic",
+      "Strong choice for teams that need reliability over novelty"
+    ],
+    "cons": [
+      "Some parts of the platform still reflect its pre-LLM chatbot-building roots",
+      "Newer AI-native competitors can feel more purpose-built for agent workflows",
+      "Enterprise-oriented pricing can be steep for very small teams"
+    ],
+    "website": "https://botpress.com",
+    "summary": "Botpress has been in conversational AI longer than almost any competitor in this category, and its 2025 LLM integration layered agent capabilities onto infrastructure that had already been battle-tested at scale. For teams that value proven reliability over the newest agent-native design, Botpress is a lower-risk choice than younger platforms."
+  },
+  {
+    "slug": "dify",
+    "name": "Dify",
+    "tagline": "Open-source LLM app platform with visual workflow builder and RAG",
+    "category": "Developer Framework",
+    "bestFor": "Developers who want an open-source, self-hostable platform for LLM apps and RAG pipelines",
+    "pricing": "Free and open-source (self-hosted); managed cloud plans available",
+    "rating": 4.4,
+    "pros": [
+      "Full self-hosting option under an open license",
+      "Visual workflow builder covers prompt orchestration, RAG, and agent logic in one place",
+      "Good balance of no-code accessibility and developer-level control",
+      "Active open-source project with frequent updates"
+    ],
+    "cons": [
+      "Self-hosting requires infrastructure knowledge, same tradeoff as other open-source tools",
+      "Smaller ecosystem of pre-built integrations than commercial automation platforms",
+      "License has conditions attached — worth reading before commercial use at scale"
+    ],
+    "website": "https://dify.ai",
+    "summary": "Dify sits alongside Flowise as an open-source option for building LLM-powered apps visually, but leans more toward being a complete application platform — combining workflow building, retrieval-augmented generation, and agent orchestration in one self-hostable package. It's a strong pick for teams that want the transparency and control of open source without giving up a visual builder."
+  },
+  {
+    "slug": "pipedream",
+    "name": "Pipedream",
+    "tagline": "Developer-first workflow platform pairing visual building with inline code",
+    "category": "Automation Platform",
+    "bestFor": "Developers who want visual workflows with the option to drop into real code at any step",
+    "pricing": "Free tier available; usage-based paid plans",
+    "rating": 4.4,
+    "pros": [
+      "Combines a visual builder with inline Node.js, Python, Go, and Bash",
+      "Managed authentication for thousands of apps simplifies integration work",
+      "Embeddable SDK (Pipedream Connect) lets teams add integrations to their own product",
+      "Now backed by Workday's resources following its late-2025 acquisition"
+    ],
+    "cons": [
+      "More developer-oriented than fully no-code tools like Zapier",
+      "Enterprise backing (Workday) may shift roadmap priorities toward enterprise use cases",
+      "Smaller mainstream brand recognition than Zapier or Make"
+    ],
+    "website": "https://pipedream.com",
+    "summary": "Pipedream's core idea is removing the ceiling that pure no-code tools eventually hit: every step in a visual workflow can drop into real code when the built-in actions aren't enough, without leaving the platform. Its acquisition by Workday in late 2025 signals a push toward embedding AI-agent integrations across enterprise software, but the core product remains useful for any developer-led automation work."
+  },
+  {
+    "slug": "bardeen",
+    "name": "Bardeen",
+    "tagline": "Browser-based AI automation agent for web scraping and SaaS workflows",
+    "category": "Browser Automation Agent",
+    "bestFor": "Individuals and small teams automating repetitive browser and SaaS tasks",
+    "pricing": "Free tier with credits; Pro around $20/month, Business around $60/month",
+    "rating": 4.0,
+    "pros": [
+      "Runs as a Chrome extension, so it works directly inside the tools you already use",
+      "Good for web scraping and lightweight cross-app automations without servers",
+      "Low barrier to entry — no separate account setup for every connected tool",
+      "Affordable entry-level pricing for individuals"
+    ],
+    "cons": [
+      "Tied to the browser, so it's not suited to backend or server-side automation",
+      "Less robust for high-volume or mission-critical workflows than server-based platforms",
+      "Credit-based free tier can run out quickly with heavier scraping tasks"
+    ],
+    "website": "https://www.bardeen.ai",
+    "summary": "Bardeen automates from inside the browser rather than through a separate backend, which makes it a natural fit for scraping data off web pages and gluing together SaaS tools that don't have great APIs. It trades the reliability and scale of server-based automation platforms for convenience — it's the tool to reach for when the task lives entirely in a browser tab."
+  },
+  {
+    "slug": "adept-ai",
+    "name": "Adept AI",
+    "tagline": "Action-oriented agents that operate software the way a human user would",
+    "category": "AI Agent Builder",
+    "bestFor": "Enterprises that need agents to operate existing software UIs and APIs directly",
+    "pricing": "Enterprise/custom pricing",
+    "rating": 3.9,
+    "pros": [
+      "Focused specifically on executing real actions in software, not just conversation",
+      "Aimed at enterprise workflows across multiple productivity platforms",
+      "Differentiated positioning from chat-first competitors"
+    ],
+    "cons": [
+      "Has gone through notable strategic pivots, adding some uncertainty to its roadmap",
+      "Less consumer/self-serve friendly than newer agent builders",
+      "Enterprise pricing and onboarding may be slow for smaller teams"
+    ],
+    "website": "https://www.adept.ai",
+    "summary": "Adept's thesis has always been that agents should act on software the way people do — clicking, typing, navigating — rather than only talking about it. That action-oriented focus has led to a more enterprise-workflow-centric product than chat-first competitors, though the company's path has included some notable pivots worth researching before committing at scale."
+  },
+  {
+    "slug": "multion",
+    "name": "MultiOn",
+    "tagline": "Web automation API built for reliable, production-grade browser agents",
+    "category": "Browser Automation Agent",
+    "bestFor": "Developers building browser agents into their own products via API",
+    "pricing": "Usage-based API pricing",
+    "rating": 4.0,
+    "pros": [
+      "API-first design makes it straightforward to embed browser agents into other products",
+      "Built-in handling for common friction points like CAPTCHAs",
+      "Good fit for teams that need programmatic control rather than a visual builder"
+    ],
+    "cons": [
+      "Requires development effort to integrate — not a no-code tool",
+      "Browser automation is inherently more fragile than API-based integrations",
+      "Smaller community and fewer public case studies than larger platforms"
+    ],
+    "website": "https://www.multion.ai",
+    "summary": "MultiOn is built for developers who want to add browser-driving capability to their own product rather than use a standalone no-code tool. Its focus on production reliability — including handling CAPTCHAs and other common failure points — sets it apart from browser-automation scripts built in-house, at the cost of needing real engineering effort to integrate."
+  },
+  {
+    "slug": "manus",
+    "name": "Manus",
+    "tagline": "General-purpose autonomous agent that spins up its own cloud workspace per task",
+    "category": "AI Agent Builder",
+    "bestFor": "Users who want to hand off complex, multi-step tasks in plain English and get a finished result",
+    "pricing": "Free tier with limited tasks; paid plans for higher usage",
+    "rating": 4.1,
+    "pros": [
+      "Genuinely general-purpose — handles research, coding, documents, and design in one interface",
+      "Spins up a dedicated cloud environment with browser, code interpreter, and office tools per task",
+      "Low setup effort: describe the task in natural language and let the agent work",
+      "High-profile enough to attract serious acquisition interest, a signal of technical maturity"
+    ],
+    "cons": [
+      "Corporate ownership has been unsettled — a planned 2025 acquisition was blocked by regulators in 2026",
+      "General-purpose agents can be less predictable than narrowly scoped tools for repeatable business processes",
+      "Newer entrant relative to established workflow automation platforms"
+    ],
+    "website": "https://manus.im",
+    "summary": "Manus aims to be a true generalist agent: describe a task in plain English, and it provisions its own cloud workspace with a browser, code interpreter, and office applications to complete it end to end. That breadth makes it compelling for one-off complex tasks, though its corporate ownership situation has been in flux — worth keeping an eye on if you're evaluating it for long-term dependency."
   }
 ]
