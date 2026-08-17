@@ -336,7 +336,7 @@
     "category": "Browser Automation Agent",
     "bestFor": "Individuals and small teams automating repetitive browser and SaaS tasks",
     "pricing": "Free tier with credits; Pro around $20/month, Business around $60/month",
-    "rating": 4.0,
+    "rating": 4,
     "pros": [
       "Runs as a Chrome extension, so it works directly inside the tools you already use",
       "Good for web scraping and lightweight cross-app automations without servers",
@@ -379,7 +379,7 @@
     "category": "Browser Automation Agent",
     "bestFor": "Developers building browser agents into their own products via API",
     "pricing": "Usage-based API pricing",
-    "rating": 4.0,
+    "rating": 4,
     "pros": [
       "API-first design makes it straightforward to embed browser agents into other products",
       "Built-in handling for common friction points like CAPTCHAs",
@@ -414,5 +414,181 @@
     ],
     "website": "https://manus.im",
     "summary": "Manus aims to be a true generalist agent: describe a task in plain English, and it provisions its own cloud workspace with a browser, code interpreter, and office applications to complete it end to end. That breadth makes it compelling for one-off complex tasks, though its corporate ownership situation has been in flux — worth keeping an eye on if you're evaluating it for long-term dependency."
+  },
+  {
+    "slug": "windsurf",
+    "name": "Windsurf",
+    "tagline": "AI-native code editor with agentic \"Cascade\" flows, from the team behind Devin",
+    "category": "Coding Agent",
+    "bestFor": "Developers who want a fast, agentic coding editor with flexible model choice",
+    "pricing": "Free tier with limited Cascade credits; Pro $20/month, Max $200/month, Teams $40/user/month (moved to daily/weekly quotas in March 2026)",
+    "rating": 4.4,
+    "pros": [
+      "Cascade agent mode handles multi-file, multi-step coding tasks end to end",
+      "Now backed by Cognition (Devin's creator) after its 2025 acquisition, combining agentic coding expertise",
+      "Free tier includes unlimited Tab autocomplete",
+      "Fast iteration loop with a feature set comparable to Cursor"
+    ],
+    "cons": [
+      "Pricing structure has changed multiple times (credits to quotas), which can confuse budgeting",
+      "Max tier at $200/month is steep for individual developers",
+      "Smaller third-party plugin ecosystem than more established editors"
+    ],
+    "website": "https://windsurf.com",
+    "summary": "Windsurf (formerly Codeium) competes directly with Cursor as an AI-native editor, and its 2025 acquisition by Cognition, the company behind the autonomous coding agent Devin, signals a push toward deeper agentic capability inside the editor itself. Its Cascade mode is built for multi-step, multi-file changes rather than single-line completions, and the free tier's unlimited autocomplete makes it an easy first try before committing to a paid plan."
+  },
+  {
+    "slug": "replit-agent",
+    "name": "Replit Agent",
+    "tagline": "Natural-language prompts to full-stack deployed web apps",
+    "category": "Coding Agent",
+    "bestFor": "Non-engineers and fast prototypers who want to go from idea to deployed app without setting up infrastructure",
+    "pricing": "Free Starter tier with limited daily Agent credits; Core $25/month ($20/month annual) with $20 usage credits included; Pro $100/month for teams up to 15 builders",
+    "rating": 4.2,
+    "pros": [
+      "Goes from prompt to a running, deployed app in one flow, no separate hosting setup needed",
+      "Effort-based credit pricing means small edits cost less than large builds",
+      "Strong for non-developers who want a working product, not just code",
+      "Publishing and hosting are built into the same platform"
+    ],
+    "cons": [
+      "Effort-based credit pricing can be hard to predict for larger projects",
+      "Best suited to web apps that fit Replit's supported stack, less flexible for unusual architectures",
+      "Code quality and structure can need real developer review before production use at scale"
+    ],
+    "website": "https://replit.com",
+    "summary": "Replit Agent is less a coding assistant than a full product-builder: describe an app in plain language and it writes, runs, and deploys it inside Replit's own hosting, skipping the setup work that usually separates a prototype from a live product. It's a strong fit for non-engineers or fast prototyping, though the effort-based credit system means costs scale with how ambitious the build is, and production-grade projects still benefit from a developer's review."
+  },
+  {
+    "slug": "composio",
+    "name": "Composio",
+    "tagline": "Managed integration layer giving AI agents access to hundreds of real-world tools",
+    "category": "Developer Framework",
+    "bestFor": "Developers building agents that need reliable, pre-authenticated access to many third-party apps",
+    "pricing": "Free tier with 100K tool calls/month; paid plans from $29/month, scaling to $229/month and custom enterprise",
+    "rating": 4.3,
+    "pros": [
+      "900+ pre-built, AI-optimized integrations remove the need to build auth and API wrappers per app",
+      "AgentAuth handles OAuth, API keys, and other auth flows in one unified layer",
+      "Usage-based free tier (100K tool calls) is generous for early development",
+      "Works alongside most agent frameworks rather than replacing them"
+    ],
+    "cons": [
+      "Adds another dependency/vendor layer between your agent and the apps it controls",
+      "Less useful if you only need one or two simple integrations",
+      "Enterprise-scale pricing requires custom negotiation"
+    ],
+    "website": "https://composio.dev",
+    "summary": "Composio solves a specific, unglamorous problem that trips up most agent projects: authenticating and calling hundreds of different third-party APIs reliably. Rather than being an agent framework itself, it's a plumbing layer that plugs into whatever framework you're already using (LangChain, CrewAI, custom code), handling the tool-calling and auth so the agent logic stays focused on decisions rather than integration glue."
+  },
+  {
+    "slug": "vapi",
+    "name": "Vapi",
+    "tagline": "Developer platform for building production voice AI agents",
+    "category": "Conversational Agent Builder",
+    "bestFor": "Developers building phone or voice-based AI agents who want infrastructure without building telephony from scratch",
+    "pricing": "Platform fee from $0.05/minute pay-as-you-go, plus pass-through costs for LLM, speech-to-text, and text-to-speech (real-world total often $0.07-$0.30+/minute); enterprise plans custom, often $40K-$70K/year",
+    "rating": 4.2,
+    "pros": [
+      "No-markup pass-through pricing on LLM, STT, and TTS costs keeps vendor choice flexible",
+      "Handles telephony, transcription, and voice synthesis orchestration in one API",
+      "Popular with developers building custom voice agent products, not just off-the-shelf bots",
+      "Pay-as-you-go option with no subscription for smaller projects"
+    ],
+    "cons": [
+      "The advertised $0.05/minute headline understates real total cost once STT/LLM/TTS are added",
+      "Concurrent call limits on pay-as-you-go plans (10 concurrent) may require Enterprise for scale",
+      "Requires more technical setup than turnkey voice agent products"
+    ],
+    "website": "https://vapi.ai",
+    "summary": "Vapi is infrastructure for developers who want to build a voice AI product rather than buy one off the shelf, stitching together telephony, speech-to-text, an LLM of your choice, and text-to-speech into a single API and billing each component at cost. That transparency is valuable for teams optimizing unit economics, but it also means the widely quoted per-minute price is only the platform fee, not the full cost of running a production voice agent."
+  },
+  {
+    "slug": "sierra",
+    "name": "Sierra",
+    "tagline": "Enterprise \"Agent OS\" for customer service across chat, voice, and messaging",
+    "category": "Conversational Agent Builder",
+    "bestFor": "Large enterprises that want a fully managed AI customer service agent, not a self-serve builder",
+    "pricing": "Custom, outcome-based enterprise pricing (no public self-serve tier)",
+    "rating": 4.3,
+    "pros": [
+      "Agents can take real actions (refunds, order updates, CRM changes), not just answer questions",
+      "Now spans chat, voice, SMS, WhatsApp, and email after acquiring voice-agent platform Receptive AI in 2026",
+      "Backed by rapid growth and a customer list including SiriusXM, ADT, and Rocket Mortgage",
+      "Outcome-based pricing aligns cost with results rather than seats or messages"
+    ],
+    "cons": [
+      "No self-serve or small-business tier, built for enterprise budgets and sales cycles",
+      "Custom pricing makes it hard to estimate cost without a sales conversation",
+      "Less suited to teams that want to build and iterate on their own agent logic in-house"
+    ],
+    "website": "https://sierra.ai",
+    "summary": "Sierra is built for enterprises that want to hand off customer service to an AI agent rather than build one themselves, with a platform (Agent OS) designed to plug into existing support, CRM, and commerce systems and actually resolve issues, not just chat about them. Its 2026 acquisition of a voice-agent platform rounded out its channel coverage, but the lack of a self-serve tier means it's not a realistic option for small teams or solo builders."
+  },
+  {
+    "slug": "chatbase",
+    "name": "Chatbase",
+    "tagline": "No-code AI chatbot builder trained on your own content",
+    "category": "Conversational Agent Builder",
+    "bestFor": "Small businesses and solo builders who want a simple AI chatbot trained on their docs or website",
+    "pricing": "Free tier (50 message credits/month); Hobby $32-40/month; Standard $120/month; Pro $400/month; custom Enterprise",
+    "rating": 4,
+    "pros": [
+      "Fast setup: point it at a website, docs, or files and it builds a chatbot automatically",
+      "Each self-serve plan includes one AI agent, with extra agents purchasable separately",
+      "Wide range of model options affecting credit consumption per response",
+      "Straightforward embed-on-your-site workflow, minimal engineering needed"
+    ],
+    "cons": [
+      "Credit system varies by model choice, making cost prediction less straightforward than flat pricing",
+      "Jump from Hobby to Standard/Pro tiers is steep for growing usage",
+      "Less suited to complex, multi-step agent workflows than dedicated agent-builder platforms"
+    ],
+    "website": "https://www.chatbase.co",
+    "summary": "Chatbase targets the most common small-business use case directly: a chatbot that can answer questions using a company's own website and documents, set up without engineering help. It's not trying to be a general AI agent platform, it's optimized for the specific job of a trained support/FAQ bot, which makes it a faster, cheaper starting point than heavier agent-builder tools for that narrow use case."
+  },
+  {
+    "slug": "langgraph-platform",
+    "name": "LangGraph Platform",
+    "tagline": "Managed hosting and observability for LangGraph's open-source agent orchestration framework",
+    "category": "Developer Framework",
+    "bestFor": "Developers already using LangChain/LangGraph who need production-grade hosting and monitoring",
+    "pricing": "Open-source LangGraph framework is free; LangGraph Platform hosting starts around $35/month, with LangSmith observability at $39/seat/month plus usage-based fees",
+    "rating": 4.2,
+    "pros": [
+      "Built on LangGraph's graph-based orchestration, which handles complex branching agent logic well",
+      "LangSmith adds real tracing and evaluation tooling for debugging agent behavior in production",
+      "The underlying framework stays free and open-source, so there's no lock-in to use the paid platform",
+      "Strong fit for teams already invested in the LangChain ecosystem"
+    ],
+    "cons": [
+      "Total production cost (Platform + LangSmith + LLM API usage) adds up faster than the headline price suggests",
+      "Steeper learning curve than higher-level, more opinionated agent builders",
+      "Primarily a framework/infrastructure layer, not a turnkey agent product"
+    ],
+    "website": "https://www.langchain.com/langgraph-platform",
+    "summary": "LangGraph Platform is the commercial layer on top of LangChain's open-source LangGraph framework, adding managed hosting and LangSmith observability for teams that have outgrown running agents on their own infrastructure. The framework itself remains free, so the platform is really a hosting and monitoring decision rather than a requirement, but for teams debugging complex agent graphs in production, the tracing tools are hard to replicate in-house."
+  },
+  {
+    "slug": "bland-ai",
+    "name": "Bland AI",
+    "tagline": "Enterprise-focused platform for automating phone calls with AI voice agents",
+    "category": "Conversational Agent Builder",
+    "bestFor": "Businesses running high-volume outbound or inbound phone operations who want AI agents on calls",
+    "pricing": "Plans start at $299/month (Start, Build, Scale, Enterprise tiers); pay-as-you-go from around $0.09/minute plus metered add-ons",
+    "rating": 3.9,
+    "pros": [
+      "Built specifically for phone-based use cases at volume, not a general chatbot retrofitted for voice",
+      "Four-tier structure gives a path from smaller deployments up to enterprise scale",
+      "Handles call transfers, SMS, and advanced integrations as part of the platform",
+      "Enterprise tier offers unlimited call caps for high-volume operations"
+    ],
+    "cons": [
+      "Real per-minute cost runs higher than the headline rate once telephony and add-ons are included",
+      "$299/month entry point is high compared to some voice-agent competitors",
+      "Total monthly cost is hard to predict since it depends heavily on call volume"
+    ],
+    "website": "https://www.bland.ai",
+    "summary": "Bland AI is built around one job, putting AI agents on the phone at scale, with a pricing and feature set aimed at businesses running real call volume rather than testing a single use case. It competes directly with Vapi but leans more toward a packaged, higher-touch enterprise product than a build-your-own developer API, which shows up in its higher entry price and volume-oriented tiers."
   }
 ]
