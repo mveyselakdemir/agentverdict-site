@@ -1,47 +1,92 @@
 [
-    {
-          "slug": "n8n-vs-zapier",
-          "a": "n8n",
-          "b": "zapier",
-          "intro": "n8n and Zapier solve the same basic problem — connecting apps and automating workflows — but target very different users: one is built for technical teams that want control, the other for anyone who wants the widest possible app coverage with zero setup friction.",
-          "verdict": "If your team has any technical capacity and wants to avoid per-task billing at scale, n8n's self-hosted option pays for itself quickly. If you need to connect obscure or niche SaaS tools with zero engineering time, Zapier's integration library is still unmatched.",
-          "chooseA": "you want self-hosting, predictable costs at high volume, and native AI/LangChain workflow support.",
-          "chooseB": "you need the broadest possible app coverage and want a non-technical team to build automations without help."
-    },
-    {
-          "slug": "make-vs-zapier",
-          "a": "make",
-          "b": "zapier",
-          "intro": "Make and Zapier are the two most popular no-code automation platforms, but they price and design workflows very differently — Make uses a visual flowchart and operations-based billing, Zapier uses a linear step list and task-based billing.",
-          "verdict": "For complex, branching automations at moderate-to-high volume, Make's pricing and visual canvas usually work out cheaper and easier to debug. For simple, high-reliability automations across many different apps, Zapier's maturity and integration breadth still lead.",
-          "chooseA": "your workflows have multiple branches and conditions, and you want operations-based pricing that scales more predictably.",
-          "chooseB": "you want the simplest possible setup and need to connect apps that may not have a Make integration yet."
-    },
-    {
-          "slug": "lindy-vs-relevance-ai",
-          "a": "lindy",
-          "b": "relevance-ai",
-          "intro": "Both Lindy and Relevance AI are 'AI-native' — built around autonomous agents rather than rigid workflow diagrams — but they serve different audiences: Lindy targets non-technical operators, Relevance AI targets teams building AI products.",
-          "verdict": "Lindy is the faster path to a working AI agent if you're not a developer and just want to automate a role like inbox triage or scheduling. Relevance AI gives more control for teams building multi-agent systems as part of their own product.",
-          "chooseA": "you want a non-technical, describe-the-job approach to automating a specific role.",
-          "chooseB": "you're building AI agents as part of your own product and need flexible, credit-based scaling and developer-level control."
-    },
-    {
-          "slug": "gumloop-vs-n8n",
-          "a": "gumloop",
-          "b": "n8n",
-          "intro": "Gumloop and n8n both let you build multi-step automations visually, but they start from opposite assumptions: Gumloop assumes most steps involve AI, n8n assumes you might want AI, code, or plain app integrations in the same workflow.",
-          "verdict": "If your workflows are fundamentally about processing unstructured content with AI (summarizing, extracting, classifying), Gumloop's AI-first nodes get you there faster. If you want one tool that can also handle traditional app-to-app automation and self-hosting, n8n is the more versatile long-term choice.",
-          "chooseA": "your workflows are centered on AI processing of documents, web content, or unstructured data, and you don't want to self-host.",
-          "chooseB": "you want self-hosting, predictable costs at scale, and flexibility to mix AI steps with traditional integrations."
-    },
-    {
-          "slug": "stack-ai-vs-lindy",
-          "a": "stack-ai",
-          "b": "lindy",
-          "intro": "Stack AI and Lindy both build AI agents, but for very different buyers: Stack AI is built for enterprise procurement and compliance review, Lindy is built for an individual or small team to get an agent running in minutes.",
-          "verdict": "If you're at a company where security review and compliance certifications are a hard requirement, Stack AI is designed for that gate. If you just want a working AI agent today without an enterprise sales process, Lindy gets there faster.",
-          "chooseA": "your organization requires formal compliance certifications and admin controls before adopting a new AI tool.",
-          "chooseB": "you want to describe a job and have an agent running the same day, without a procurement process."
-    }
+  {
+    "slug": "n8n-vs-zapier",
+    "a": "n8n",
+    "b": "zapier",
+    "intro": "n8n and Zapier solve the same basic problem — connecting apps and automating workflows — but target very different users: one is built for technical teams that want control, the other for anyone who wants the widest possible app coverage with zero setup friction.",
+    "verdict": "If your team has any technical capacity and wants to avoid per-task billing at scale, n8n's self-hosted option pays for itself quickly. If you need to connect obscure or niche SaaS tools with zero engineering time, Zapier's integration library is still unmatched.",
+    "chooseA": "you want self-hosting, predictable costs at high volume, and native AI/LangChain workflow support.",
+    "chooseB": "you need the broadest possible app coverage and want a non-technical team to build automations without help."
+  },
+  {
+    "slug": "make-vs-zapier",
+    "a": "make",
+    "b": "zapier",
+    "intro": "Make and Zapier are the two most popular no-code automation platforms, but they price and design workflows very differently — Make uses a visual flowchart and operations-based billing, Zapier uses a linear step list and task-based billing.",
+    "verdict": "For complex, branching automations at moderate-to-high volume, Make's pricing and visual canvas usually work out cheaper and easier to debug. For simple, high-reliability automations across many different apps, Zapier's maturity and integration breadth still lead.",
+    "chooseA": "your workflows have multiple branches and conditions, and you want operations-based pricing that scales more predictably.",
+    "chooseB": "you want the simplest possible setup and need to connect apps that may not have a Make integration yet."
+  },
+  {
+    "slug": "lindy-vs-relevance-ai",
+    "a": "lindy",
+    "b": "relevance-ai",
+    "intro": "Both Lindy and Relevance AI are 'AI-native' — built around autonomous agents rather than rigid workflow diagrams — but they serve different audiences: Lindy targets non-technical operators, Relevance AI targets teams building AI products.",
+    "verdict": "Lindy is the faster path to a working AI agent if you're not a developer and just want to automate a role like inbox triage or scheduling. Relevance AI gives more control for teams building multi-agent systems as part of their own product.",
+    "chooseA": "you want a non-technical, describe-the-job approach to automating a specific role.",
+    "chooseB": "you're building AI agents as part of your own product and need flexible, credit-based scaling and developer-level control."
+  },
+  {
+    "slug": "gumloop-vs-n8n",
+    "a": "gumloop",
+    "b": "n8n",
+    "intro": "Gumloop and n8n both let you build multi-step automations visually, but they start from opposite assumptions: Gumloop assumes most steps involve AI, n8n assumes you might want AI, code, or plain app integrations in the same workflow.",
+    "verdict": "If your workflows are fundamentally about processing unstructured content with AI (summarizing, extracting, classifying), Gumloop's AI-first nodes get you there faster. If you want one tool that can also handle traditional app-to-app automation and self-hosting, n8n is the more versatile long-term choice.",
+    "chooseA": "your workflows are centered on AI processing of documents, web content, or unstructured data, and you don't want to self-host.",
+    "chooseB": "you want self-hosting, predictable costs at scale, and flexibility to mix AI steps with traditional integrations."
+  },
+  {
+    "slug": "stack-ai-vs-lindy",
+    "a": "stack-ai",
+    "b": "lindy",
+    "intro": "Stack AI and Lindy both build AI agents, but for very different buyers: Stack AI is built for enterprise procurement and compliance review, Lindy is built for an individual or small team to get an agent running in minutes.",
+    "verdict": "If you're at a company where security review and compliance certifications are a hard requirement, Stack AI is designed for that gate. If you just want a working AI agent today without an enterprise sales process, Lindy gets there faster.",
+    "chooseA": "your organization requires formal compliance certifications and admin controls before adopting a new AI tool.",
+    "chooseB": "you want to describe a job and have an agent running the same day, without a procurement process."
+  },
+  {
+    "slug": "devin-vs-cursor",
+    "a": "devin",
+    "b": "cursor",
+    "intro": "Devin and Cursor both target software engineers, but represent two different philosophies: Devin acts as a semi-autonomous engineer working in its own sandbox, while Cursor embeds AI directly into the editor you already use.",
+    "verdict": "For well-scoped tasks you want to hand off and check back on later, Devin's autonomous, plan-then-execute approach can save real time. For fast, in-flow pair programming where you stay in the driver's seat, Cursor's editor-native experience is hard to beat.",
+    "chooseA": "you want to delegate a scoped coding task and review the result, rather than co-writing it in real time.",
+    "chooseB": "you want AI assistance woven into your everyday editing flow, with you steering every step."
+  },
+  {
+    "slug": "dify-vs-flowise",
+    "a": "dify",
+    "b": "flowise",
+    "intro": "Dify and Flowise are the two leading open-source, self-hostable platforms for building LLM-powered apps visually, both popular with developers who want control without giving up a visual builder.",
+    "verdict": "Dify leans toward being a more complete application platform with built-in RAG and workflow orchestration, while Flowise sticks closer to being a visual layer over LangChain's building blocks. Teams already invested in LangChain concepts may prefer Flowise; teams wanting an all-in-one app platform may prefer Dify.",
+    "chooseA": "you want a self-hosted, all-in-one platform for LLM apps including RAG, without assembling separate pieces.",
+    "chooseB": "you're already comfortable with LangChain concepts and want a visual canvas on top of them."
+  },
+  {
+    "slug": "voiceflow-vs-botpress",
+    "a": "voiceflow",
+    "b": "botpress",
+    "intro": "Voiceflow and Botpress are both established conversational-agent builders, but Voiceflow leans toward voice-first, cross-functional design work while Botpress leans on a longer track record in deployed chatbots.",
+    "verdict": "If your team includes designers and PMs who need to collaborate on conversation flows, especially for voice, Voiceflow's canvas is built for that. If you want a platform with over a decade of production chatbot deployments now layered with LLM agent features, Botpress offers more proven reliability at scale.",
+    "chooseA": "voice is a core part of your agent and you want strong cross-functional design collaboration.",
+    "chooseB": "you want a battle-tested platform with a long deployment history and solid developer extensibility."
+  },
+  {
+    "slug": "manus-vs-lindy",
+    "a": "manus",
+    "b": "lindy",
+    "intro": "Manus and Lindy are both 'describe the task in plain English' agents, but Manus aims to be a true generalist that spins up a full cloud workspace per task, while Lindy focuses on automating specific recurring roles.",
+    "verdict": "For one-off, complex, multi-tool tasks (research plus a document plus some code), Manus's generalist cloud workspace approach is compelling. For automating a recurring role like inbox triage or meeting scheduling reliably over time, Lindy's more focused design tends to work better.",
+    "chooseA": "you need a generalist agent for varied, one-off complex tasks spanning research, code, and documents.",
+    "chooseB": "you want to automate a specific recurring role reliably, with compliance certifications in place."
+  },
+  {
+    "slug": "pipedream-vs-n8n",
+    "a": "pipedream",
+    "b": "n8n",
+    "intro": "Pipedream and n8n both blend visual workflow building with real code, appealing to developers who've outgrown pure no-code tools, but they differ in ownership model and integration approach.",
+    "verdict": "Pipedream's managed authentication for thousands of apps and embeddable Connect SDK make it strong for teams building integrations into their own product. n8n's self-hosting option and native LangChain nodes make it stronger for teams that want full infrastructure control and AI-native workflows.",
+    "chooseA": "you want managed auth across many apps and an embeddable integration SDK for your own product.",
+    "chooseB": "you want to self-host for cost control and need native AI/LangChain workflow support."
+  }
 ]
