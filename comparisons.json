@@ -88,5 +88,68 @@
     "verdict": "Pipedream's managed authentication for thousands of apps and embeddable Connect SDK make it strong for teams building integrations into their own product. n8n's self-hosting option and native LangChain nodes make it stronger for teams that want full infrastructure control and AI-native workflows.",
     "chooseA": "you want managed auth across many apps and an embeddable integration SDK for your own product.",
     "chooseB": "you want to self-host for cost control and need native AI/LangChain workflow support."
+  },
+  {
+    "slug": "windsurf-vs-cursor",
+    "a": "windsurf",
+    "b": "cursor",
+    "intro": "Windsurf and Cursor are the two leading AI-native code editors, both offering agentic multi-file editing on top of a familiar editor experience, and both now backed by well-funded, coding-focused companies.",
+    "verdict": "The two are close competitors with similar core capabilities; the deciding factor is often pricing structure and which agent (Cascade vs Cursor's agent mode) fits your workflow better in testing. Windsurf's link to Cognition/Devin may appeal to teams wanting a unified agentic coding roadmap, while Cursor's larger user base means faster bug fixes and community resources.",
+    "chooseA": "you want Cascade's agentic flow and value being part of the same company building Devin.",
+    "chooseB": "you want the most widely adopted AI editor with the largest user base and fastest iteration cycle."
+  },
+  {
+    "slug": "replit-agent-vs-devin",
+    "a": "replit-agent",
+    "b": "devin",
+    "intro": "Replit Agent and Devin both aim to turn a natural-language request into working software, but they target different endpoints: Replit Agent builds and deploys a full running app inside its own platform, while Devin works more like an autonomous engineer operating in a sandboxed dev environment.",
+    "verdict": "For a self-contained web app that needs to go from idea to live URL fast, Replit Agent's all-in-one build-and-host flow is hard to beat. For engineering teams that need an agent to work within an existing codebase and toolchain, Devin's broader sandboxed environment is the better fit.",
+    "chooseA": "you want a working, hosted app from a prompt without managing separate infrastructure.",
+    "chooseB": "you need an agent to operate inside an existing codebase, repo, and engineering workflow."
+  },
+  {
+    "slug": "composio-vs-pipedream",
+    "a": "composio",
+    "b": "pipedream",
+    "intro": "Composio and Pipedream both solve the same underlying problem, connecting AI agents and workflows to hundreds of third-party apps, but Composio is purpose-built for AI agent tool-calling while Pipedream is a broader workflow and integration platform that also supports agents.",
+    "verdict": "If your primary need is giving an AI agent reliable, pre-authenticated access to many apps' APIs, Composio's AgentAuth and AI-optimized integrations are more directly built for that job. If you need a general-purpose workflow platform that can also run scheduled jobs, webhooks, and custom code beyond agent tool-calling, Pipedream's broader feature set covers more ground.",
+    "chooseA": "your main use case is authenticated tool-calling for AI agents across many apps.",
+    "chooseB": "you need a general workflow automation platform with inline code, not just agent tool access."
+  },
+  {
+    "slug": "vapi-vs-bland-ai",
+    "a": "vapi",
+    "b": "bland-ai",
+    "intro": "Vapi and Bland AI both let businesses put AI agents on phone calls, but they target different buyers: Vapi is a developer-first API for building custom voice products, while Bland AI packages a more turnkey, enterprise-oriented platform for high call volumes.",
+    "verdict": "Developers who want full control over the LLM, STT, and TTS stack and pay near cost for each component tend to prefer Vapi's transparent, pass-through pricing. Businesses that want a more managed platform built around volume phone operations, with less assembly required, often lean toward Bland AI despite the higher entry price.",
+    "chooseA": "you're a developer who wants granular control and near-cost pricing on each voice AI component.",
+    "chooseB": "you're running high call volumes and want a more packaged, less build-it-yourself platform."
+  },
+  {
+    "slug": "sierra-vs-botpress",
+    "a": "sierra",
+    "b": "botpress",
+    "intro": "Sierra and Botpress both build conversational AI agents for customer-facing use cases, but Sierra is a fully managed enterprise platform with custom pricing, while Botpress is a more accessible, self-serve platform with over a decade of chatbot deployment history.",
+    "verdict": "Large enterprises with the budget and sales cycle for a fully managed, outcome-based platform get more done-for-you value from Sierra. Smaller and mid-sized teams that want to build, iterate on, and control their own agent logic, without an enterprise sales process, are usually better served by Botpress.",
+    "chooseA": "you're a large enterprise that wants a fully managed agent platform and can work through a custom sales process.",
+    "chooseB": "you want a self-serve platform with a proven track record that you can configure and iterate on directly."
+  },
+  {
+    "slug": "chatbase-vs-voiceflow",
+    "a": "chatbase",
+    "b": "voiceflow",
+    "intro": "Chatbase and Voiceflow both help teams build conversational AI agents, but Chatbase is optimized for fast, no-code chatbots trained on existing content, while Voiceflow is a fuller conversation-design platform built for cross-functional teams working on more complex voice and chat flows.",
+    "verdict": "For a simple support or FAQ chatbot trained on your website or docs, Chatbase gets you there faster with less setup. For more complex, multi-step conversational experiences, especially voice, that need collaborative design between PMs, designers, and engineers, Voiceflow's canvas is the more capable tool.",
+    "chooseA": "you want a fast, no-code chatbot trained on your own content with minimal setup.",
+    "chooseB": "you're designing more complex conversational flows, especially voice, with a cross-functional team."
+  },
+  {
+    "slug": "langgraph-platform-vs-crewai",
+    "a": "langgraph-platform",
+    "b": "crewai",
+    "intro": "LangGraph Platform and CrewAI are both frameworks for orchestrating multi-agent systems in code, but they take different approaches: LangGraph models agent workflows as graphs with fine-grained control over state and branching, while CrewAI organizes agents around defined roles collaborating on a task.",
+    "verdict": "For complex, non-linear agent workflows that need precise control over state and conditional branching, LangGraph's graph-based model offers more flexibility. For teams that think in terms of a \"crew\" of specialized agents with clear roles collaborating on a shared goal, CrewAI's abstraction is often faster to reason about and build with.",
+    "chooseA": "you need fine-grained, graph-based control over complex, branching agent workflows and want managed hosting/observability.",
+    "chooseB": "you prefer organizing agents around clear roles collaborating on a task, with a simpler mental model."
   }
 ]
