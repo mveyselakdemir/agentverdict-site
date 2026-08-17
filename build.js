@@ -37,6 +37,13 @@ function layout({ title, description, canonical, jsonLd, body, ogImage }) {
         <meta name="twitter:card" content="summary_large_image" />
         <script src="https://cdn.tailwindcss.com"></script>
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6874412047012645" crossorigin="anonymous"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-2T2F709K79"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-2T2F709K79');
+        </script>
         ${jsonLd ? `<script type="application/ld+json">${JSON.stringify(jsonLd)}</script>` : ""}
         <link rel="icon" href="data:,">
         </head>
