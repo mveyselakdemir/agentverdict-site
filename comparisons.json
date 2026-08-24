@@ -151,5 +151,14 @@
     "verdict": "For complex, non-linear agent workflows that need precise control over state and conditional branching, LangGraph's graph-based model offers more flexibility. For teams that think in terms of a \"crew\" of specialized agents with clear roles collaborating on a shared goal, CrewAI's abstraction is often faster to reason about and build with.",
     "chooseA": "you need fine-grained, graph-based control over complex, branching agent workflows and want managed hosting/observability.",
     "chooseB": "you prefer organizing agents around clear roles collaborating on a task, with a simpler mental model."
+  },
+  {
+    "slug": "composio-vs-zapier",
+    "a": "composio",
+    "b": "zapier",
+    "intro": "Composio and Zapier both give AI agents the ability to act on external apps, but from opposite directions: Composio is developer infrastructure for authenticated tool-calling, while Zapier is a no-code platform whose AI Agents layer sits on top of its existing automation product.",
+    "verdict": "If you're an engineering team building a custom agent that needs secure, programmatic access to many apps' APIs, Composio's managed auth and MCP Gateway are purpose-built for that. If you want a non-technical team to spin up an AI agent without writing code, Zapier's AI Agents feature and massive integration library get there with far less engineering effort.",
+    "chooseA": "you're building a custom AI agent in code and need managed authentication and tool-calling across hundreds of apps.",
+    "chooseB": "you want a non-technical, no-code path to an AI agent backed by the widest app integration library available."
   }
 ]
