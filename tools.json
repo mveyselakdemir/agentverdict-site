@@ -418,24 +418,23 @@
   {
     "slug": "composio",
     "name": "Composio",
-    "tagline": "Managed tool-calling and auth infrastructure for AI agents",
+    "tagline": "Developer-first tool-calling infrastructure for AI agents",
     "category": "Developer Framework",
-    "bestFor": "Developers who need their AI agents to reliably call and authenticate against hundreds of external apps",
-    "pricing": "Free tier with a monthly tool-call quota; Pro plans start around $29/month with usage-based overages, plus custom Enterprise pricing",
-    "rating": 4.4,
+    "bestFor": "Developers who need reliable, pre-authenticated tool access for AI agents across hundreds of apps",
+    "pricing": "Free tier includes 20,000 tool calls/month; Pro plan around $29/month with usage-based overages; custom Enterprise pricing",
+    "rating": 4.3,
     "pros": [
-      "Manages OAuth flows, API keys, and token refresh so agents don't need custom auth code per app",
-      "Exposes over 1,000 app toolkits and 20,000+ individual tools through a single MCP endpoint",
-      "Framework-agnostic — works with Claude, Cursor, and other agent stacks rather than locking into one",
-      "Backed by active YC-funded development with frequent platform updates"
+      "Over 1,000 toolkits exposing 20,000+ individual tools for agents to call",
+      "AgentAuth handles OAuth, API keys, and token refresh so agents don't manage credentials directly",
+      "Compatible with 15+ agent frameworks (LangChain, LlamaIndex, CrewAI) and major LLM providers",
+      "Strong open-source traction (tens of thousands of GitHub stars) signals active development"
     ],
     "cons": [
-      "Usage-based tool-call pricing requires monitoring to avoid surprise overages at scale",
-      "Infrastructure/middleware layer, not a visual builder — still requires engineering to wire up",
-      "Newer, narrower brand recognition than general automation platforms like Zapier or Make",
-      "Recent pricing changes mean terms are still shifting for new signups"
+      "Purely infrastructure — it needs to be paired with an actual agent framework or orchestrator to do anything",
+      "Requires SDK/CLI integration work, not a no-code option for non-developers",
+      "Usage-based overages can add up for high-volume agent deployments"
     ],
     "website": "https://composio.dev",
-    "summary": "Composio solves a specific, unglamorous problem: giving AI agents authenticated, reliable access to the apps they need to act on, rather than expecting each developer to hand-roll OAuth and token refresh for every integration. Its MCP Gateway and managed auth layer make it a natural companion to code-first agent frameworks rather than a standalone product end users interact with directly. It's the right pick for engineering teams building agents that need broad, secure tool access — not for teams looking for a no-code workflow canvas."
+    "summary": "Composio doesn't build agents itself — it solves the unglamorous but critical problem of letting an agent reliably call real-world tools (Gmail, Slack, GitHub, and hundreds more) without every team reinventing OAuth flows and credential management. AgentAuth is the standout feature: it manages the authentication lifecycle so a developer's agent code can focus on logic rather than plumbing. It's a strong pick for engineering teams already building on a framework like CrewAI or LangChain who need broad, well-maintained tool access rather than a full agent-building UI."
   }
 ]
