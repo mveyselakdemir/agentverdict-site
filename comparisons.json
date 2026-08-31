@@ -153,12 +153,12 @@
     "chooseB": "you prefer organizing agents around clear roles collaborating on a task, with a simpler mental model."
   },
   {
-    "slug": "composio-vs-zapier",
+    "slug": "composio-vs-n8n",
     "a": "composio",
-    "b": "zapier",
-    "intro": "Composio and Zapier both give AI agents the ability to act on external apps, but from opposite directions: Composio is developer infrastructure for authenticated tool-calling, while Zapier is a no-code platform whose AI Agents layer sits on top of its existing automation product.",
-    "verdict": "If you're an engineering team building a custom agent that needs secure, programmatic access to many apps' APIs, Composio's managed auth and MCP Gateway are purpose-built for that. If you want a non-technical team to spin up an AI agent without writing code, Zapier's AI Agents feature and massive integration library get there with far less engineering effort.",
-    "chooseA": "you're building a custom AI agent in code and need managed authentication and tool-calling across hundreds of apps.",
-    "chooseB": "you want a non-technical, no-code path to an AI agent backed by the widest app integration library available."
+    "b": "n8n",
+    "intro": "Composio and n8n both help connect AI agents and workflows to third-party apps, but they come at the problem from opposite directions: Composio is a code-first tool-calling layer built specifically for AI agents, while n8n is a broader visual automation platform that added AI/LangChain nodes on top of a general workflow engine.",
+    "verdict": "If you're writing agent code directly (with LangChain, CrewAI, or a custom loop) and just need reliable, pre-authenticated access to hundreds of app APIs, Composio's SDK and AgentAuth are purpose-built for that. If you want a visual canvas that can handle both AI-driven steps and traditional app-to-app automation, and you'd rather self-host than depend on a SaaS vendor, n8n covers more ground.",
+    "chooseA": "you're building agent logic in code and need a dedicated, well-maintained tool-calling and auth layer.",
+    "chooseB": "you want a visual workflow builder that mixes AI and traditional automation, with a self-hosting option."
   }
 ]
