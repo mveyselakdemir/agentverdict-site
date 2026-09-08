@@ -160,5 +160,14 @@
     "verdict": "Both require a sales conversation and a real enterprise budget, so the choice usually comes down to a bake-off on your own support data and existing tool integrations rather than a feature checklist. Sierra has a slightly broader publicly documented channel footprint after its 2026 voice-agent acquisition, while Decagon's rapid, richly funded growth suggests aggressive product investment; neither publishes pricing, so cost comparisons only happen in the sales process.",
     "chooseA": "you want to evaluate the fastest-growing, most richly funded challenger in enterprise AI customer service.",
     "chooseB": "you want a platform with a slightly longer track record and documented multi-channel (chat, voice, SMS, WhatsApp, email) coverage."
+  },
+  {
+    "slug": "activepieces-vs-n8n",
+    "a": "activepieces",
+    "b": "n8n",
+    "intro": "Activepieces and n8n are the two most popular open-source, self-hostable alternatives to Zapier, and they get compared constantly by teams that want to own their automation stack — the split comes down to who is meant to build the workflows.",
+    "verdict": "n8n is the deeper tool: its code nodes, LangChain integrations, and larger community make it the better fit when engineers are building and maintaining automations. Activepieces is easier for non-developers to pick up, ships under a permissive MIT license, and its one-credit-per-run pricing is simpler to predict for straightforward app-to-app flows, but it offers less room to grow when workflows get technically complex.",
+    "chooseA": "you want an MIT-licensed, business-user-friendly builder with built-in AI agents and MCP support, and your workflows don't need much custom code.",
+    "chooseB": "your team has technical capacity and wants full code fallback, deeper AI/LangChain workflow support, and the larger ecosystem."
   }
 ]
