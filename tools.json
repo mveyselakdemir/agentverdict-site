@@ -612,5 +612,28 @@
     ],
     "website": "https://decagon.ai",
     "summary": "Decagon builds AI agents aimed at the highest-stakes end of customer service: complex, multi-step conversations for large enterprises rather than simple FAQ bots. Its rapid fundraising (a $250M Series D at a $4.5B valuation in early 2026) puts it in direct competition with Sierra for enterprise customer-service budgets, though like Sierra, it offers no self-serve tier and requires a sales conversation to get real pricing. It's worth evaluating alongside Sierra for large organizations, and worth skipping entirely for smaller teams that need a self-serve or lower-cost option."
+  },
+  {
+    "slug": "activepieces",
+    "name": "Activepieces",
+    "tagline": "Open-source, MIT-licensed automation with built-in AI agents and MCP",
+    "category": "Automation Platform",
+    "bestFor": "Teams that want an open-source Zapier alternative with a gentler learning curve than n8n",
+    "pricing": "Free tier with 100 credits/day; Plus from $16/month (billed yearly), Team $166/month; self-hosting available on every plan, Community Edition free under MIT",
+    "rating": 4.3,
+    "pros": [
+      "MIT-licensed open-source core with the option to self-host on every plan, including free",
+      "Run-based credits — one credit per run regardless of step count — makes non-AI workflows cheap to price",
+      "Ships AI agents, chat-to-automation, tables, and MCP servers alongside the classic flow builder",
+      "Embeddable, white-label builder SDK for products that want automation inside their own app"
+    ],
+    "cons": [
+      "Integration library (roughly 700+ 'pieces') is still smaller than Zapier's, though anything with an API works via HTTP/webhook steps",
+      "AI steps on hosted models consume 2–20 credits each, so AI-heavy flows cost noticeably more unless you bring your own keys",
+      "SOC 2 certification is still in progress, which may matter for compliance-sensitive buyers",
+      "Governance features like audit logs, SCIM, and custom roles are reserved for the enterprise Ultimate tier"
+    ],
+    "website": "https://www.activepieces.com",
+    "summary": "Activepieces is the open-source automation platform most often positioned as the friendlier sibling of n8n: it targets business users with a Zapier-like visual builder, but keeps an MIT license and lets you self-host on any plan, free included. Its recent pivot to run-based credits — a whole run costs one credit no matter how many steps — plus native AI agents, chat-to-automation, and MCP support make it a credible pick for teams that want AI-aware workflows without a heavy engineering investment. Where it still trails is integration breadth versus Zapier and depth of code-level control versus n8n, and its SOC 2 program isn't finished yet, so compliance-driven buyers should check that box before committing."
   }
 ]
