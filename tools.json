@@ -635,5 +635,28 @@
     ],
     "website": "https://www.activepieces.com",
     "summary": "Activepieces is the open-source automation platform most often positioned as the friendlier sibling of n8n: it targets business users with a Zapier-like visual builder, but keeps an MIT license and lets you self-host on any plan, free included. Its recent pivot to run-based credits — a whole run costs one credit no matter how many steps — plus native AI agents, chat-to-automation, and MCP support make it a credible pick for teams that want AI-aware workflows without a heavy engineering investment. Where it still trails is integration breadth versus Zapier and depth of code-level control versus n8n, and its SOC 2 program isn't finished yet, so compliance-driven buyers should check that box before committing."
+  },
+  {
+    "slug": "retell-ai",
+    "name": "Retell AI",
+    "tagline": "Developer platform for building and deploying AI phone agents",
+    "category": "Voice Agent Platform",
+    "bestFor": "Product and engineering teams that want to ship production phone or web voice agents with a transparent per-minute cost model",
+    "pricing": "Usage-based, starting around $0.07/minute for the voice layer; all-in costs typically land higher once LLM, text-to-speech, and telephony are added. $10 free credit on signup, plus small monthly fees for phone numbers and extra concurrency",
+    "rating": 4.3,
+    "pros": [
+      "Component-level pricing (voice infra, LLM, TTS, telephony) is published, so per-minute costs are predictable once your stack is chosen",
+      "SOC 2, HIPAA, and GDPR compliance with a self-serve BAA, which matters for healthcare and other regulated call use cases",
+      "Bring-your-own telephony via Twilio or Telnyx, plus a WebSocket streaming API for custom LLM and web-based agents",
+      "Solid conversational fundamentals: interruption handling, multilingual support across 30+ languages, and real-time call analytics"
+    ],
+    "cons": [
+      "The advertised $0.07/minute is only the base layer; realistic production costs are noticeably higher",
+      "Iterating on call flows and agent behaviour often needs developer involvement, which slows non-technical teams down",
+      "Voice quality and language coverage are uneven outside English, with reported weaknesses in some European languages",
+      "Lacks some enterprise governance features such as role-based access control and audit trails"
+    ],
+    "website": "https://www.retellai.com",
+    "summary": "Retell AI sits squarely in the developer-first tier of voice agent platforms, alongside Vapi: it gives you the streaming infrastructure, telephony hooks, and model choice to build a phone or web agent, and expects you to assemble and tune the stack yourself. Its clearest advantages are transparent component pricing and a compliance posture (SOC 2, HIPAA, GDPR) that many younger voice startups still lack. Teams without engineering support, or those who mainly need a packaged inbound receptionist, will find more turnkey options elsewhere; teams building voice into their own product will appreciate the control."
   }
 ]
