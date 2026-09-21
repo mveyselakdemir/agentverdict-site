@@ -178,5 +178,14 @@
     "verdict": "Vapi is the more modular, build-it-yourself option with pass-through pricing on each component, which rewards teams that want to swap providers and squeeze cost. Retell AI is slightly more opinionated and packaged, with a stronger out-of-the-box compliance story (SOC 2, HIPAA, GDPR with a self-serve BAA) that matters for healthcare and regulated call centres. For most teams the real decision comes down to trialling both with your own prompts and phone traffic, since latency and voice quality vary by configuration more than by platform.",
     "chooseA": "you need HIPAA or GDPR compliance out of the box and want a somewhat more packaged platform with predictable per-minute pricing.",
     "chooseB": "you want maximum control over every layer of the voice stack and near-cost, pass-through pricing on each component."
+  },
+  {
+    "slug": "browser-use-vs-bardeen",
+    "a": "browser-use",
+    "b": "bardeen",
+    "intro": "Browser Use and Bardeen both automate work that happens inside a web browser, but from opposite ends: Browser Use is an open-source library and developer cloud for building browser agents into your own software, while Bardeen is a no-code Chrome extension for automating your own repetitive browser tasks.",
+    "verdict": "If you're an engineer and the browser agent is part of a product or backend pipeline, Browser Use's open-source core, per-hour cloud browsers, and hosted agent API give you far more control and scale. If you're an individual or ops team that just wants to scrape a page or move data between SaaS tabs without writing code, Bardeen gets you there in minutes and Browser Use would be overkill.",
+    "chooseA": "you're a developer building browser automation into a product and want an open-source, usage-priced stack you can self-host or scale in the cloud.",
+    "chooseB": "you want a no-code browser automation that runs in your own Chrome, with an affordable flat monthly plan and no engineering required."
   }
 ]
