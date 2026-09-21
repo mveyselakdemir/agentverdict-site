@@ -658,5 +658,28 @@
     ],
     "website": "https://www.retellai.com",
     "summary": "Retell AI sits squarely in the developer-first tier of voice agent platforms, alongside Vapi: it gives you the streaming infrastructure, telephony hooks, and model choice to build a phone or web agent, and expects you to assemble and tune the stack yourself. Its clearest advantages are transparent component pricing and a compliance posture (SOC 2, HIPAA, GDPR) that many younger voice startups still lack. Teams without engineering support, or those who mainly need a packaged inbound receptionist, will find more turnkey options elsewhere; teams building voice into their own product will appreciate the control."
+  },
+  {
+    "slug": "browser-use",
+    "name": "Browser Use",
+    "tagline": "Open-source browser agents with a pay-as-you-go cloud",
+    "category": "Browser Automation Agent",
+    "bestFor": "Developers who want an open-source browser agent library plus optional managed browsers and hosted agents",
+    "pricing": "Open-source library is free; cloud has no subscription — $0.02 per browser-hour plus model tokens and proxy bandwidth, with a one-time free signup credit",
+    "rating": 4.4,
+    "pros": [
+      "Widely adopted open-source library (Python and TypeScript) with no vendor lock-in for the core agent",
+      "Cloud pricing is usage-based with no subscription, and purchased credits don't expire",
+      "Managed cloud browsers include stealth, CAPTCHA handling, and residential proxies out of the box",
+      "SOC 2 Type II compliant with enterprise options like HIPAA support and zero data retention"
+    ],
+    "cons": [
+      "Developer-oriented — there is no no-code builder for non-technical users",
+      "Total cost is split across browser time, tokens, and bandwidth, which makes budgeting less predictable than a flat plan",
+      "Browser-driving agents remain more fragile than API-based integrations when sites change",
+      "Concurrency limits scale with lifetime spend, so new accounts start with modest parallelism"
+    ],
+    "website": "https://browser-use.com",
+    "summary": "Browser Use started as one of the most popular open-source libraries for letting an LLM drive a web browser, and has since layered a commercial cloud on top: managed browsers billed per hour and a hosted agent API where you hand over a task and get finished work back. Its distinct position is that you can start entirely open-source and self-hosted, then move to the cloud only for the hard parts — stealth, proxies, CAPTCHAs, scale — rather than committing to a closed platform up front. It's the right pick for engineering teams building browser automation into their own products; non-technical users wanting to automate their own browser tasks will be better served by a tool like Bardeen."
   }
 ]
