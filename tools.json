@@ -336,7 +336,7 @@
     "category": "Browser Automation Agent",
     "bestFor": "Individuals and small teams automating repetitive browser and SaaS tasks",
     "pricing": "Free tier with credits; Pro around $20/month, Business around $60/month",
-    "rating": 4.0,
+    "rating": 4,
     "pros": [
       "Runs as a Chrome extension, so it works directly inside the tools you already use",
       "Good for web scraping and lightweight cross-app automations without servers",
@@ -379,7 +379,7 @@
     "category": "Browser Automation Agent",
     "bestFor": "Developers building browser agents into their own products via API",
     "pricing": "Usage-based API pricing",
-    "rating": 4.0,
+    "rating": 4,
     "pros": [
       "API-first design makes it straightforward to embed browser agents into other products",
       "Built-in handling for common friction points like CAPTCHAs",
@@ -532,7 +532,7 @@
     "category": "Conversational Agent Builder",
     "bestFor": "Small businesses and solo builders who want a simple AI chatbot trained on their docs or website",
     "pricing": "Free tier (50 message credits/month); Hobby $32-40/month; Standard $120/month; Pro $400/month; custom Enterprise",
-    "rating": 4.0,
+    "rating": 4,
     "pros": [
       "Fast setup: point it at a website, docs, or files and it builds a chatbot automatically",
       "Each self-serve plan includes one AI agent, with extra agents purchasable separately",
@@ -681,5 +681,28 @@
     ],
     "website": "https://browser-use.com",
     "summary": "Browser Use started as one of the most popular open-source libraries for letting an LLM drive a web browser, and has since layered a commercial cloud on top: managed browsers billed per hour and a hosted agent API where you hand over a task and get finished work back. Its distinct position is that you can start entirely open-source and self-hosted, then move to the cloud only for the hard parts — stealth, proxies, CAPTCHAs, scale — rather than committing to a closed platform up front. It's the right pick for engineering teams building browser automation into their own products; non-technical users wanting to automate their own browser tasks will be better served by a tool like Bardeen."
+  },
+  {
+    "slug": "openai-agentkit",
+    "name": "OpenAI AgentKit",
+    "tagline": "OpenAI's official toolkit for building and shipping AI agents",
+    "category": "AI Agent Builder",
+    "bestFor": "Developer teams already building on the OpenAI API who want an integrated, official toolkit for agent orchestration, embeddable chat UI, evals, and safety guardrails.",
+    "pricing": "Agent Builder, ChatKit, and Guardrails themselves are free to use; costs come from standard OpenAI API usage for the underlying models and tools (for example per-token charges for reasoning models, plus per-call fees for tools like Code Interpreter, file search storage, and web search), so total cost scales with usage rather than a flat subscription.",
+    "rating": 4.1,
+    "pros": [
+      "Built and maintained directly by OpenAI, with first access to its latest models and tool-calling capabilities.",
+      "Agent Builder's visual canvas, versioning, and inline evals shorten the path from prototype to production compared to hand-rolled orchestration code.",
+      "ChatKit provides embeddable, customizable chat UI components instead of requiring teams to build a chat interface from scratch.",
+      "Guardrails ships as an open-source safety layer aimed specifically at jailbreaks, PII exposure, and malicious agent behavior."
+    ],
+    "cons": [
+      "Ties workflows to the OpenAI model ecosystem, unlike framework-agnostic tools such as LangGraph Platform or CrewAI.",
+      "Usage-based pricing across models, tools, and storage makes total cost difficult to predict for complex, multi-step agents.",
+      "Still a young product as of 2026, so community tooling, third-party integrations, and best practices are less mature than on longer-established platforms.",
+      "Assumes real engineering involvement, making it a weaker fit for fully non-technical builders than dedicated no-code agent platforms."
+    ],
+    "website": "https://openai.com/index/introducing-agentkit/",
+    "summary": "AgentKit is OpenAI's attempt to consolidate the pieces developers were previously assembling by hand, a visual Agent Builder, embeddable ChatKit UI, evaluation tooling, and a Guardrails safety layer, into one official toolkit for building and shipping agents on its models. It's a natural fit for teams already committed to the OpenAI API who want less orchestration glue code and faster iteration from prototype to production. Teams that want model flexibility, predictable flat pricing, or a fully no-code experience for non-technical builders will likely find a better fit elsewhere, since AgentKit still bills by usage and assumes genuine engineering involvement."
   }
 ]
