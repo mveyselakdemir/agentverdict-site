@@ -187,5 +187,14 @@
     "verdict": "If you're an engineer and the browser agent is part of a product or backend pipeline, Browser Use's open-source core, per-hour cloud browsers, and hosted agent API give you far more control and scale. If you're an individual or ops team that just wants to scrape a page or move data between SaaS tabs without writing code, Bardeen gets you there in minutes and Browser Use would be overkill.",
     "chooseA": "you're a developer building browser automation into a product and want an open-source, usage-priced stack you can self-host or scale in the cloud.",
     "chooseB": "you want a no-code browser automation that runs in your own Chrome, with an affordable flat monthly plan and no engineering required."
+  },
+  {
+    "slug": "openai-agentkit-vs-lindy",
+    "a": "openai-agentkit",
+    "b": "lindy",
+    "intro": "OpenAI AgentKit and Lindy both help teams build and ship AI agents, but they start from different places: AgentKit is OpenAI's own developer toolkit built around its models and billed by usage, while Lindy is an independent, no-code agent builder with flat subscription pricing and a large library of pre-built integrations.",
+    "verdict": "Teams already building on the OpenAI API, comfortable with engineering involvement, and wanting official tooling for evals, guardrails, and embeddable chat UI tend to get more long-term value from AgentKit. Teams that want a non-technical, largely no-code path to a working agent, with predictable monthly pricing and less setup, are usually better served by Lindy, even at the cost of less control over the underlying model stack.",
+    "chooseA": "you're building on OpenAI's models already and want an integrated, official toolkit with evals, guardrails, and embeddable chat UI, and don't mind usage-based pricing.",
+    "chooseB": "you want a no-code agent builder with flat pricing and a large pre-built integration library, without needing dedicated engineering resources."
   }
 ]
