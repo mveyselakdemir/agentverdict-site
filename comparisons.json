@@ -196,5 +196,14 @@
     "verdict": "Teams already building on the OpenAI API, comfortable with engineering involvement, and wanting official tooling for evals, guardrails, and embeddable chat UI tend to get more long-term value from AgentKit. Teams that want a non-technical, largely no-code path to a working agent, with predictable monthly pricing and less setup, are usually better served by Lindy, even at the cost of less control over the underlying model stack.",
     "chooseA": "you're building on OpenAI's models already and want an integrated, official toolkit with evals, guardrails, and embeddable chat UI, and don't mind usage-based pricing.",
     "chooseB": "you want a no-code agent builder with flat pricing and a large pre-built integration library, without needing dedicated engineering resources."
+  },
+  {
+    "slug": "claude-code-vs-cursor",
+    "a": "claude-code",
+    "b": "cursor",
+    "intro": "Claude Code and Cursor are two of the most common choices for AI-assisted development, but they take different approaches: Claude Code is a terminal-based agent tied to Anthropic's models, while Cursor is an AI-native code editor that supports multiple models.",
+    "verdict": "Claude Code tends to suit developers who want to hand off multi-file tasks to an agent and review the resulting diffs, and who value working independently of any one editor. Cursor tends to suit developers who want inline completions, visual diffs, and the freedom to switch between models inside a familiar IDE. Many teams use both, so the choice often comes down to workflow preference rather than raw capability.",
+    "chooseA": "you're comfortable in the terminal, want to delegate larger multi-file tasks to an agent, and prefer a tool that works alongside any editor.",
+    "chooseB": "you prefer an IDE-native experience with inline completions, visual diffs, and the ability to choose between multiple AI models."
   }
 ]
