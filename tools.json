@@ -704,5 +704,28 @@
     ],
     "website": "https://openai.com/index/introducing-agentkit/",
     "summary": "AgentKit is OpenAI's attempt to consolidate the pieces developers were previously assembling by hand, a visual Agent Builder, embeddable ChatKit UI, evaluation tooling, and a Guardrails safety layer, into one official toolkit for building and shipping agents on its models. It's a natural fit for teams already committed to the OpenAI API who want less orchestration glue code and faster iteration from prototype to production. Teams that want model flexibility, predictable flat pricing, or a fully no-code experience for non-technical builders will likely find a better fit elsewhere, since AgentKit still bills by usage and assumes genuine engineering involvement."
+  },
+  {
+    "slug": "claude-code",
+    "name": "Claude Code",
+    "tagline": "Anthropic's terminal-based agentic coding assistant",
+    "category": "Coding Agent",
+    "bestFor": "Developers comfortable in the terminal who want an agent that reads a whole codebase, edits files, and runs commands and tests on their behalf.",
+    "pricing": "Included with Claude Pro (about $20/month, less when billed annually) and Max plans (from $100/month), and with Team plans; usage is capped in rolling five-hour windows, and API-based usage billing is also available.",
+    "rating": 4.5,
+    "pros": [
+      "Works directly in the terminal and repository, so it can read many files, edit them, and run commands and tests in one loop.",
+      "Bundled into Claude subscriptions, which gives heavy users a predictable monthly cost instead of pure per-token billing.",
+      "Extensible through MCP servers, custom commands, and hooks, so teams can wire it into existing tooling and workflows.",
+      "Not locked to a single editor, so it fits alongside whatever IDE or workflow a team already uses."
+    ],
+    "cons": [
+      "Usage limits on subscription plans can be reached during long agentic sessions, pushing heavy users toward higher tiers.",
+      "Terminal-first workflow has a steeper learning curve than an IDE-native assistant for developers who prefer a visual interface.",
+      "Only runs on Anthropic's Claude models, unlike editors that let you switch between model providers.",
+      "Autonomous edits and commands still need careful review and permission settings, as with any coding agent."
+    ],
+    "website": "https://www.anthropic.com/claude-code",
+    "summary": "Claude Code is Anthropic's agentic coding tool that lives in the terminal and operates on a whole repository, planning changes, editing files, and running commands and tests rather than only suggesting snippets. Its distinguishing traits are editor independence and extensibility through MCP and hooks, plus inclusion in Claude subscriptions. Developers who want inline completions and a visual IDE experience may prefer an editor-based tool such as Cursor, while those who delegate multi-file tasks and are comfortable reviewing diffs will find it a strong fit."
   }
 ]
