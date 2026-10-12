@@ -727,5 +727,28 @@
     ],
     "website": "https://www.anthropic.com/claude-code",
     "summary": "Claude Code is Anthropic's agentic coding tool that lives in the terminal and operates on a whole repository, planning changes, editing files, and running commands and tests rather than only suggesting snippets. Its distinguishing traits are editor independence and extensibility through MCP and hooks, plus inclusion in Claude subscriptions. Developers who want inline completions and a visual IDE experience may prefer an editor-based tool such as Cursor, while those who delegate multi-file tasks and are comfortable reviewing diffs will find it a strong fit."
+  },
+  {
+    "slug": "cline",
+    "name": "Cline",
+    "tagline": "Open-source coding agent that runs inside your editor",
+    "category": "Coding Agent",
+    "bestFor": "Developers who want an open-source, model-agnostic coding agent inside VS Code or another editor and are happy to manage their own API costs.",
+    "pricing": "The extension itself is free and open source; you bring your own API key (or local model) and pay the model provider directly, with optional managed credit and subscription plans and custom enterprise pricing.",
+    "rating": 4.3,
+    "pros": [
+      "Open source and free to install, so there is no per-seat fee for the tool itself.",
+      "Works with many model providers and local models, which avoids lock-in to a single vendor.",
+      "Plan and Act modes with step-by-step approvals, diffs and checkpoints keep the developer in control of edits and commands.",
+      "Extensible through MCP servers and repo-level rules files that encode a team's coding conventions."
+    ],
+    "cons": [
+      "Bring-your-own-key billing means costs scale with usage and can climb quickly on long agentic sessions.",
+      "Quality depends heavily on the underlying model you choose, so results vary more than with a tightly integrated product.",
+      "Enterprise features such as SSO and governance require a sales conversation rather than a published price.",
+      "Setup and configuration (keys, MCP servers, approvals) are more hands-on than a turnkey editor."
+    ],
+    "website": "https://cline.bot",
+    "summary": "Cline is an open-source coding agent that plugs into editors such as VS Code and also offers a CLI, planning and acting through multi-file edits and terminal commands with explicit approval steps. Its distinguishing trait is separating the agent from the model provider, so you can point it at hosted or local models and pay for usage directly. That flexibility suits developers who want control and transparency over cost, but those who prefer a single predictable subscription or a polished all-in-one editor may be better served by a product like Cursor."
   }
 ]
