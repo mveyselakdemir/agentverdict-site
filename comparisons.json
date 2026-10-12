@@ -205,5 +205,14 @@
     "verdict": "Claude Code tends to suit developers who want to hand off multi-file tasks to an agent and review the resulting diffs, and who value working independently of any one editor. Cursor tends to suit developers who want inline completions, visual diffs, and the freedom to switch between models inside a familiar IDE. Many teams use both, so the choice often comes down to workflow preference rather than raw capability.",
     "chooseA": "you're comfortable in the terminal, want to delegate larger multi-file tasks to an agent, and prefer a tool that works alongside any editor.",
     "chooseB": "you prefer an IDE-native experience with inline completions, visual diffs, and the ability to choose between multiple AI models."
+  },
+  {
+    "slug": "cline-vs-cursor",
+    "a": "cline",
+    "b": "cursor",
+    "intro": "Cline and Cursor both bring agentic coding into the editor, but Cline is an open-source extension that works with whichever model you connect, while Cursor is a full AI-native editor sold as a subscription.",
+    "verdict": "Cline tends to suit developers who want transparency, model choice and direct control over what they spend per task. Cursor tends to suit those who want a polished, integrated editor with inline completions and a predictable subscription. The choice often comes down to whether you value flexibility and open source or an all-in-one experience.",
+    "chooseA": "you want an open-source agent, prefer to bring your own API keys or local models, and are comfortable managing usage costs yourself.",
+    "chooseB": "you want an integrated AI-native editor with inline completions and a subscription-based price instead of metered API bills."
   }
 ]
