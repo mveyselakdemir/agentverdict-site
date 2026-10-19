@@ -750,5 +750,28 @@
     ],
     "website": "https://cline.bot",
     "summary": "Cline is an open-source coding agent that plugs into editors such as VS Code and also offers a CLI, planning and acting through multi-file edits and terminal commands with explicit approval steps. Its distinguishing trait is separating the agent from the model provider, so you can point it at hosted or local models and pay for usage directly. That flexibility suits developers who want control and transparency over cost, but those who prefer a single predictable subscription or a polished all-in-one editor may be better served by a product like Cursor."
+  },
+  {
+    "slug": "langflow",
+    "name": "Langflow",
+    "tagline": "Open-source visual builder for AI agents and RAG apps",
+    "category": "AI Agent Builder",
+    "bestFor": "Developers and technical teams who want a drag-and-drop canvas for prototyping agents and RAG pipelines while keeping the option to drop into Python.",
+    "pricing": "Open source and free to self-host, with a free desktop app and a free cloud account for prototyping; higher-limit cloud and enterprise tiers are custom-priced rather than publicly listed.",
+    "rating": 4.2,
+    "pros": [
+      "Open source and free to self-host, with no usage restrictions on the core builder.",
+      "Visual node-based canvas makes it quick to wire together models, vector stores and tools into an agent or RAG flow.",
+      "Python customization of components lets developers go beyond what the drag-and-drop blocks offer.",
+      "Flows can be served as an API and used to build and deploy MCP servers, easing the path from prototype to integration."
+    ],
+    "cons": [
+      "Production-grade hosted pricing and enterprise features require a sales conversation.",
+      "Self-hosting means you also pay for and manage LLM APIs, vector databases and infrastructure, so total running cost is more than the free software suggests.",
+      "The free cloud account is geared toward prototyping and has limited capacity for team use.",
+      "Large flows on a visual canvas can become hard to review, version and maintain compared with code."
+    ],
+    "website": "https://www.langflow.org",
+    "summary": "Langflow is a low-code, node-based platform for building AI agents and retrieval-augmented generation applications, with an open-source core you can run yourself or try on a free cloud account. Its distinguishing trait is pairing a visual canvas with real Python extensibility, so prototypes can be refined by developers rather than rebuilt. It suits technical teams who want control and a free starting point; non-technical users wanting turnkey business automations, or teams that need published enterprise pricing up front, may find other tools a better fit."
   }
 ]
