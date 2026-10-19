@@ -214,5 +214,14 @@
     "verdict": "Cline tends to suit developers who want transparency, model choice and direct control over what they spend per task. Cursor tends to suit those who want a polished, integrated editor with inline completions and a predictable subscription. The choice often comes down to whether you value flexibility and open source or an all-in-one experience.",
     "chooseA": "you want an open-source agent, prefer to bring your own API keys or local models, and are comfortable managing usage costs yourself.",
     "chooseB": "you want an integrated AI-native editor with inline completions and a subscription-based price instead of metered API bills."
+  },
+  {
+    "slug": "langflow-vs-flowise",
+    "a": "langflow",
+    "b": "flowise",
+    "intro": "Langflow and Flowise are both open-source, visual builders for LLM agents and RAG applications, so they are frequent alternatives for developers who want a self-hostable canvas.",
+    "verdict": "The two overlap heavily, and either can get a prototype running quickly. Langflow leans toward Python extensibility and a free cloud option for trying things out, while Flowise appeals to teams who prefer its own ecosystem and tooling. Trying a representative flow in each is the most reliable way to decide.",
+    "chooseA": "you are comfortable in Python, want to customize components in code, and like having a free desktop or cloud account for prototyping.",
+    "chooseB": "you already work in Flowise's ecosystem or prefer its approach to building and deploying agent flows over Langflow's."
   }
 ]
